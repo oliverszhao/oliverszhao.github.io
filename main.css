@@ -404,13 +404,19 @@ li#mainMenu a:hover:not(.active) {
 }
 */
 
-@media only screen and (min-width: 1000px) {
+@media only screen and (orientation:landscape) and (min-width: 1080px) {
     .mobile {
         display: none;
     }
 }
 
-@media only screen and (max-width: 1001px) {
+@media only screen and (orientation:landscape) and (max-width: 1080px) {
+    .desktop {
+        display: none;
+    }
+}
+
+@media only screen and (orientation:portrait) {
     .desktop {
         display: none;
     }
@@ -429,27 +435,29 @@ li#mainMenu a:hover:not(.active) {
   
 /* The container <div> - needed to position the dropdown content */
 .dropdown {
-position: relative;
+    position: relative;
+    margin-top: 0.67em;
+    margin-bottom: 0.67em;
 }
 
 /* Dropdown Content (Hidden by Default) */
 .dropdown-content {
-display: none;
-position: absolute;
-background-color: #f1f1f1;
-min-width: 160px;
-box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-z-index: 1;
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
 }
 
 /* Links inside the dropdown */
 .dropdown-content a {
-color: #1470af;
-font-family: 'Ubuntu';
-font-weight: bold;
-padding: 12px 16px;
-text-decoration: none;
-display: block;
+    color: #1470af;
+    font-family: 'Ubuntu';
+    font-weight: bold;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
 }
 
 /* Change color of dropdown links on hover */
