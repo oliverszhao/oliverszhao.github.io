@@ -404,27 +404,59 @@ li#mainMenu a:hover:not(.active) {
 }
 */
 
-/* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
-
+@media only screen and (min-width: 700px) {
+    .mobile {
+        display: none;
+    }
 }
 
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
-
+@media only screen and (max-width: 701px) {
+    .desktop {
+        display: none;
+    }
 }
 
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
-
+/* Dropdown Button */
+.dropbtn {
+    background-color: white;
+    color: #1470af;
+    padding: 16px;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Ubuntu';
+    border: none;
+  }
+  
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+position: relative;
 }
 
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
-
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+display: none;
+position: absolute;
+background-color: #f1f1f1;
+min-width: 160px;
+box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+z-index: 1;
 }
 
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
-
+/* Links inside the dropdown */
+.dropdown-content a {
+color: #1470af;
+font-family: 'Ubuntu';
+font-weight: bold;
+padding: 12px 16px;
+text-decoration: none;
+display: block;
 }
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #ddd;}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block;}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {background-color: rgb(26, 174, 194);}
