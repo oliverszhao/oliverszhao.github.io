@@ -386,8 +386,8 @@ li#mainMenu a:hover:not(.active) {
     }
 
 .reversefade:not(:hover) {
-        opacity: 0.75;
-        }
+    opacity: 0.75;
+    }
 
 
 /* CSS rule applied to HTML element with id="element1"
@@ -427,7 +427,7 @@ li#mainMenu a:hover:not(.active) {
     background-color: white;
     color: #1470af;
     padding: 16px;
-    font-size: 20px;
+    font-size: 32px;
     font-weight: bold;
     font-family: 'Ubuntu';
     border: none;
@@ -455,7 +455,8 @@ li#mainMenu a:hover:not(.active) {
     color: #1470af;
     font-family: 'Ubuntu';
     font-weight: bold;
-    padding: 12px 16px;
+    font-size: 28px;
+    padding: 12px 20px;
     text-decoration: none;
     display: block;
 }
