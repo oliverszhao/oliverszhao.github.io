@@ -1,75 +1,91 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-<title>Oliver S. Zhao</title>
-<link rel="stylesheet" href="./main.css" />
+    <title>Oliver S. Zhao</title>
+    <!-- Required  meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS and main CSS-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="./main.css" />
+
+    <!-- jQuery, Popper.js, Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </head>
+
 <body>
 
-<div class="row">
-
-    <div class="column mobile dropdown" style="width:20%;">
-        <button class="dropbtn">Menu</button>
-        <div class="dropdown-content">
-            <a href="./index.html">Profile</a>
-            <a href="./research.html">Research</a>
-            <a href="./CV.html">CV</a>
-            <a href="./notes.html">Resources</a>
-            <a href="./contact.html">Contact</a>
-        </div>
+<!-- Navigation bar -->
+<nav class="navbar navbar-expand-md navbar-light" style="color:#1470af">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarText">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="./index.tml">About <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./research.html">Research</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="./resume.html">CV</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="./notes.html">Resources</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="./contact.html">Contact</a>
+        </li>
+      </ul>
+      <span class="navbar-text" style="font-size: 32px; color:white">
+        Oliver S. Zhao
+      </span>
     </div>
+</nav>
+  
+<div class="container-fluid d-flex justify-content-center">
+    <div class="row py-5" style="max-width:1000px">
+        <h2 style="text-align:center;color:#1470af;background-color:white">Note: This incomplete website is still under development, but is made public to solicit feedback from my peers.</h2>
 
-    <div class="column desktop" style="width:64%;">
+        <h1 style="text-align:center">Website Still Under Construction - To-Do List</h1>
         <ul>
-            <li id="mainMenu"><a class="active menu" href="./index.html">Profile</a></li>
-            <li id="mainMenu"><a href="./research.html">Research</a></li>
-            <li id="mainMenu"><a href="./CV.html">CV</a></li>
-            <li id="mainMenu"><a href="./notes.html">Resources</a></li>
-            <li id="mainMenu"><a href="./contact.html">Contact</a></li>
+            <li>Create individual project pages</li>
+            <li>Implement Bootstrap library for better web-responsiveness</li>
+            <li>Incorporate dual CDN-local Bootstrap</li>
+            <li>Reorganize messy files and code...</li>
+            <li>Fix CSS compatibility issues on resume page</li>
+            <li>Replace stock images for "Drug Safety" and "Opioid Use" images on "Research" page</li>
         </ul>
-    </div>
-
-    <div class="column mobile" style="width:80%;">
-        <h1 style="text-align:right">Oliver S. Zhao</h1>
-    </div>
-
-    <div class="column desktop" style="width:36%;">
-        <h1 style="text-align:right">Oliver S. Zhao</h1>
     </div>
 </div>
 
-<br></br>
-
-<div style="width:1200px; margin:0 auto;">
-
-    <h2 style="text-align:center;color:#1470af;background-color:white">Note: This incomplete website is still under development, but is made public to solicit feedback from my peers.</h2>
-
-    <h1 style="text-align:center">Website Still Under Construction - To-Do List</h1>
-    <ul>
-        <li>Creating mobile-compatible version</li>
-        <li>Create individual project pages</li>
-        <li>Figure out why text is opaque on "Resources" page</li>
-        <li>Replace stock images for "Drug Safety" and "Opioid Use" images on "Research" page</li>
-    </ul>
-
-
-    <div class="row">
-        <h1 style="text-align:center;font-size:64px">I'm an <i>engineer</i> who is interested in driving AI into medicine.</h1>
+<div class="container-fluid d-flex justify-content-center">
+    <div class="row py-5" style="max-width:1000px">
+        <h1 class="text-center" id="bioLine">I'm an <i>engineer</i> who is interested <br> in driving AI into medicine.</h1>
     </div>
-    
-    <div class="row">
-        <div class="column">
-            <h1><img src="./Images/Oliver.png", width="450px", height="450px", style="padding-top:15px;"></h1>
+</div>
+
+<div class="container-fluid d-flex justify-content-center">
+    <div class="row pb-5" style="max-width:1000px">
+        <div class="col-sm-6">
+            <img src="./Images/Oliver.png" width="100%">
         </div>
-        <div class="column">
-            <h2 style="text-align:center;font-size:48px">My Mission</h2>
-            <h4 style="text-align:center;font-size:28px">To leverage machine learning to improve medicine through the use of assistive decision-making software, patient-specific predictive models, and streamlined workflow tools.</h4>
+        <div class="col-sm-6">
+            <h2 class="text-center" id="missionTitle">My Mission</h2>
+            <h4 class="text-center" id="missionStatement">To leverage machine learning to improve medicine through the use of assistive decision-making software, patient-specific predictive models, and streamlined workflow tools.</h4>
         </div>
     </div>
+</div>
 
-    <div class="row">
-        <p style="text-align:center">I am interested in bringing new technologies to medicine. Over time, my research areas have moved from basic biological research into applied computational areas. I began with genetic engineering and stem cell & neural engineering before moving into machine learning and mechanistic modeling.</p>
-        <p style="text-align:center">My previous projects focused on developing ensemble methods for nanomaterial optimization, implementing image recognition techniques for medical annotation, and building multimodal neural networks for predicting patient outcomes. At the NIH, I am using 3D electron microscopy to study the structure of thrombi to better understand the blood clotting process, as well as examining platelets from COVID-19 hospitalized patients to understand the cause for abnormal clotting. </p>
+<div class="container-fluid d-flex justify-content-center">
+    <div class="row" style="max-width:1000px">
+        <p class="text-center" id="bioDescription">I am interested in bringing new technologies to medicine. Over time, my research areas have moved from basic biological research into applied computational areas. I began with genetic engineering and stem cell & neural engineering before moving into machine learning and mechanistic modeling.</p>
+        <p class="text-center" id="bioDescription">My previous projects focused on developing ensemble methods for nanomaterial optimization, implementing image recognition techniques for medical annotation, and building multimodal neural networks for predicting patient outcomes. At the NIH, I am using 3D electron microscopy to study the structure of thrombi to better understand the blood clotting process, as well as examining platelets from COVID-19 hospitalized patients to understand the cause for abnormal clotting. </p>
     </div>
 </div>
 
