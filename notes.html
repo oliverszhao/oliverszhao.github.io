@@ -1,151 +1,163 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Resources – Oliver S. Zhao</title>
-<link rel="stylesheet" href="./main.css" />
+    <title>Resources – Oliver S. Zhao</title>
+    <!-- Required  meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS and main CSS-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="./main.css" />
+
+    <!-- jQuery, Popper.js, Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </head>
+
 <body>
 
-<div class="row">
+<!-- Navigation bar -->
+<nav class="navbar navbar-expand-md navbar-light" style="color:#1470af">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarText">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="./index.html">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./research.html">Research</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="./resume.html">CV</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link active" href="./notes.html">Resources <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="./contact.html">Contact</a>
+        </li>
+      </ul>
+      <span class="navbar-text" style="font-size: 32px; color:white">
+        Oliver S. Zhao
+      </span>
+    </div>
+</nav>
 
-    <div class="column mobile dropdown" style="width:20%;">
-        <button class="dropbtn">Menu</button>
-        <div class="dropdown-content">
-            <a href="./index.html">Profile</a>
-            <a href="./research.html">Research</a>
-            <a href="./CV.html">CV</a>
-            <a href="./notes.html">Resources</a>
-            <a href="./contact.html">Contact</a>
+<!-- Resources -->
+<div class="container-fluid d-flex justify-content-center" style="max-width:1400px">
+
+    <div class="row pb-5 p-3">
+
+        <div class="col-md-6">
+            
+            <h2 id="noteGroup">Mathematical Concepts</h2>
+
+            <h3 id="noteTitle">Vector Calculus</h3>
+            <ol class="list">
+                <li id="noteDoc"><a id = "link", href="./Notes/Vector Calculus - Differentiation.pdf", target="blank">Differentiation</a></li>
+                <li id="noteDoc"><a id = "link", href="./Notes/Vector Calculus - Higher-Order Derivatives.pdf", target="blank">Higher-Order Derivatives</a></li>
+                <li id="noteDoc"><a id = "link", href="./Notes/Vector Calculus - Vector-Valued Functions.pdf", target="blank">Vector-Valued Functions</a></li>
+                <li id="noteDoc"><a id = "link", href="./Notes/Vector Calculus - Double and Triple Integrals.pdf", target="blank">Double and Triple Integrals</a></li>
+                <li id="noteDoc"><a id = "link", href="./Notes/Vector Calculus - Change of Variables.pdf", target="blank">Change of Variables</a></li>
+                <li id="noteDoc"><a id = "link", href="./Notes/Vector Calculus - Integrals Over Paths and Surfaces.pdf", target="blank">Integrals Over Paths and Surfaces</a></li>
+                <li id="noteDoc"><a id = "link", href="./Notes/Vector Calculus - Integral Theorems of Vector Analysis.pdf", target="blank">Integral Theorems of Vector Analysis</a></li>
+            </ol>
+            
+            <h3 id="noteTitle">Linear Algebra and Matrices</h3>
+            <ol class="list">
+                <li id="noteDoc"><a id = "link", href="./Notes/Vectors.pdf", target="blank">Vectors</a></li>
+                <li id="noteDoc"><a id = "link", href="./Notes/Matrices.pdf", target="blank">Matrices</a></li>
+                <li id="noteDoc"><del>Least Squares</del></li>
+            </ol>
+            
+            <h3 id="noteTitle">Differential Equations and Finite Methods</h3>
+            <ol class="list">
+                <li id="noteDoc"><a id = "link", href="./Notes/Finite Difference Methods.pdf", target="blank">Finite Difference Methods</a></li>
+                <li id="noteDoc"><del>Finite Volume Methods</del></li>
+                <li id="noteDoc"><del>Finite Element Methods</del></li>
+                <li id="noteDoc"><del>Common PDEs</del></li>
+            </ol>
+            
+            <h3 id="noteTitle">Stochastic Proceseses</h3>
+            <ol class="list">
+                <li id="noteDoc"><del>Random Walks</del></li>
+                <li id="noteDoc"><del>Branching Processes</del></li>
+                <li id="noteDoc"><del>Markov Chains</del></li>
+                <li id="noteDoc"><del>Monte Carlo</del></li>
+            </ol>
+            
+            <h3 id="noteTitle">Convex Optimization</h3>
+            <ol class="list">
+                <li id="noteDoc"><a id = "link", href="./Notes/Convex Optimization - Fundamental Concepts.pdf", target="blank">Fundamental Concepts</a></li>
+                <li id="noteDoc"><del>First-Order Methods</del></li>
+                <li id="noteDoc"><del>Optimality and Duality</del></li>
+                <li id="noteDoc"><del>Second-Order Methods</del></li>
+            </ol>
+            
+            <h3 id="noteTitle">Probability</h3>
+            <p style="font-size:14px;">To be completed</p>
+            
+            <h3 id="noteTitle">Discrete Math</h3>
+            <p style="font-size:14px;">To be completed</p>
+
         </div>
+        
+        <div class="col-md-6">
+            
+            <h2 id="noteGroup">Machine Learning Concepts</h2>
+
+            <h3 id="noteTitle">Dimension Reduction Methods</h3>
+            <ol class="list">
+                <li id="noteDoc"><a id = "link", href="./Notes/Principal Component Analysis.pdf", target="blank">Principal Component Analysis</a></li>
+                <li id="noteDoc"><a id = "link", href="./Notes/t Distributed Stochastic Neighbor Embedding.pdf", target="blank">t Stochastic Neighbor Embedding</a></li>
+                <li id="noteDoc"><a id = "link", href="./Notes/Linear Discriminant Analysis.pdf", target="blank">Linear Discriminant Analysis</a></li>
+                <li id="noteDoc"><del>Uniform Manifold Approximation and Projection</del></li>
+            </ol>
+            
+            <h3 id="noteTitle">Regression Methods</h3>
+            <ol class="list">
+                <li id="noteDoc"><a id = "link", href="./Notes/Regression Methods.pdf", target="blank">Regression Methods</a></li>
+            </ol class="list">
+            
+            <h3 id="noteTitle">Decision Tree-Based Models</h3>
+            <ol class="list">
+                <li id="noteDoc"><a id = "link", href="./Notes/Decision Trees.pdf", target="blank">Decision Trees</a></li>
+                <li id="noteDoc"><a id = "link", href="./Notes/Random Forest.pdf", target="blank">Random Forest</a></li>
+                <li id="noteDoc"><a id = "link", href="./Notes/AdaBoost.pdf", target="blank">AdaBoost</a></li>
+                <li id="noteDoc"><a id = "link", href="./Notes/Gradient Boosting.pdf", target="blank">Gradient Boosting</a></li>
+                <li id="noteDoc"><a id = "link", href="./Notes/Bagging.pdf", target="blank">Bagging</a></li>
+            </ol class="list">
+            
+            <h3 id="noteTitle">Support Vector Machines</h3>
+            <p>To be completed</p>
+            
+            <h3 id="noteTitle">Deep Learning</h3>
+            <ol class="list">
+                <li id="noteDoc"><a id = "link", href="./Notes/Rosenblatts Perceptron.pdf", target="blank">Rosenblatt's Perceptron</a></li>
+                <li id="noteDoc"><a id = "link", href="./Notes/Multilayer Perceptrons.pdf", target="blank">Multilayer Perceptrons</a></li>
+                <li id="noteDoc"><a id = "link", href="./Notes/Convolutional Neural Networks.pdf", target="blank">Convolutional Neural Networks</a></li>
+                <li id="noteDoc"><del>Recurrent Neural Networks</del></li>
+                <li id="noteDoc"><del>Generative Adversarial Networks</del></li>
+                <li id="noteDoc"><del>Autoencoders</del></li>
+                <li id="noteDoc"><del>Neural Ordinary Differential Equations</del></li>
+                <li id="noteDoc"><del>Radial Basis Networks</del></li>
+                <li id="noteDoc"><del>Boltzmann Machines</del></li>
+                <li id="noteDoc"><del>Deep Belief Networks</del></li>
+            </ol>
+            
+            <h2 id="noteGroup">Programming Concepts</h2>
+            
+            <h3 id="noteTitle">Data Structures and Algorithms</h3>
+            <p style="font-size:14px;">To be completed</p>            
+        
+        </div>
+
     </div>
-
-    <div class="column desktop" style="width:64%;">
-        <ul>
-            <li id="mainMenu"><a href="./index.html">Profile</a></li>
-            <li id="mainMenu"><a href="./research.html">Research</a></li>
-            <li id="mainMenu"><a href="./CV.html">CV</a></li>
-            <li id="mainMenu"><a class="active menu" href="./notes.html">Resources</a></li>
-            <li id="mainMenu"><a href="./contact.html">Contact</a></li>
-        </ul>
-    </div>
-
-    <div class="column mobile" style="width:80%;">
-        <h1 style="text-align:right">Oliver S. Zhao</h1>
-    </div>
-
-    <div class="column desktop" style="width:36%;">
-        <h1 style="text-align:right">Oliver S. Zhao</h1>
-    </div>
-</div>
-
-<br></br>
-
-<div style="width:1000px; margin:0 auto;">
-
-<div class="column">
-
-<h2>Mathematical Concepts</h2>
-
-<h3>Vector Calculus</h3>
-<ol>
-    <li><a id = "link", href="./Notes/Vector Calculus - Differentiation.pdf", target="blank">Differentiation</a></li>
-    <li><a id = "link", href="./Notes/Vector Calculus - Higher-Order Derivatives.pdf", target="blank">Higher-Order Derivatives</a></li>
-    <li><a id = "link", href="./Notes/Vector Calculus - Vector-Valued Functions.pdf", target="blank">Vector-Valued Functions</a></li>
-    <li><a id = "link", href="./Notes/Vector Calculus - Double and Triple Integrals.pdf", target="blank">Double and Triple Integrals</a></li>
-    <li><a id = "link", href="./Notes/Vector Calculus - Change of Variables.pdf", target="blank">Change of Variables</a></li>
-    <li><a id = "link", href="./Notes/Vector Calculus - Integrals Over Paths and Surfaces.pdf", target="blank">Integrals Over Paths and Surfaces</a></li>
-    <li><a id = "link", href="./Notes/Vector Calculus - Integral Theorems of Vector Analysis.pdf", target="blank">Integral Theorems of Vector Analysis</a></li>
-</ol>
-
-<h3>Linear Algebra and Matrices</h3>
-<ol>
-    <li><a id = "link", href="./Notes/Vectors.pdf", target="blank">Vectors</a></li>
-    <li><a id = "link", href="./Notes/Matrices.pdf", target="blank">Matrices</a></li>
-    <li><del>Least Squares</del></li>
-</ol>
-
-<h3>Differential Equations and Finite Methods</h3>
-<ol>
-    <li><a id = "link", href="./Notes/Finite Difference Methods.pdf", target="blank">Finite Difference Methods</a></li>
-    <li><del>Finite Volume Methods</del></li>
-    <li><del>Finite Element Methods</del></li>
-    <li><del>Common PDEs</del></li>
-</ol>
-
-<h3>Stochastic Proceseses</h3>
-<ol>
-    <li><del>Random Walks</del></li>
-    <li><del>Branching Processes</del></li>
-    <li><del>Markov Chains</del></li>
-    <li><del>Monte Carlo</del></li>
-</ol>
-
-<h3>Convex Optimization</h3>
-<ol>
-    <li><a id = "link", href="./Notes/Convex Optimization - Fundamental Concepts.pdf", target="blank">Fundamental Concepts</a>
-    </li>
-    <li><del>First-Order Methods</del></li>
-    <li><del>Optimality and Duality</del></li>
-    <li><del>Second-Order Methods</del></li>
-</ol>
-
-<h3>Probability</h3>
-<p style="font-size:14px;">To be completed</p>
-
-<h3>Discrete Math</h3>
-<p style="font-size:14px;">To be completed</p>
 
 </div>
 
-<div class="column">
-
-<h2>Machine Learning Concepts</h2>
-
-<h3>Dimension Reduction Methods</h3>
-<ol>
-    <li><a id = "link", href="./Notes/Principal Component Analysis.pdf", target="blank">Principal Component Analysis</a></li>
-    <li><a id = "link", href="./Notes/t Distributed Stochastic Neighbor Embedding.pdf", target="blank">t Stochastic Neighbor Embedding</a></li>
-    <li><a id = "link", href="./Notes/Linear Discriminant Analysis.pdf", target="blank">Linear Discriminant Analysis</a></li>
-    <li><del>Uniform Manifold Approximation and Projection</del></li>
-</ol>
-
-<h3>Regression Methods</h3>
-<ol>
-    <li><a id = "link", href="./Notes/Regression Methods.pdf", target="blank">Regression Methods</a></li>
-</ol>
-
-<h3>Decision Tree-Based Models</h3>
-<ol>
-    <li><a id = "link", href="./Notes/Decision Trees.pdf", target="blank">Decision Trees</a></li>
-    <li><a id = "link", href="./Notes/Random Forest.pdf", target="blank">Random Forest</a></li>
-    <li><a id = "link", href="./Notes/AdaBoost.pdf", target="blank">AdaBoost</a></li>
-    <li><a id = "link", href="./Notes/Gradient Boosting.pdf", target="blank">Gradient Boosting</a></li>
-    <li><a id = "link", href="./Notes/Bagging.pdf", target="blank">Bagging</a></li>
-</ol>
-
-<h3>Support Vector Machines</h3>
-<p>To be completed</p>
-
-<h3>Deep Learning</h3>
-<ol>
-    <li><a id = "link", href="./Notes/Rosenblatts Perceptron.pdf", target="blank">Rosenblatt's Perceptron</a></li>
-    <li><a id = "link", href="./Notes/Multilayer Perceptrons.pdf", target="blank">Multilayer Perceptrons</a></li>
-    <li><a id = "link", href="./Notes/Convolutional Neural Networks.pdf", target="blank">Convolutional Neural Networks</a></li>
-    <li><del>Recurrent Neural Networks</del></li>
-    <li><del>Generative Adversarial Networks</del></li>
-    <li><del>Autoencoders</del></li>
-    <li><del>Neural Ordinary Differential Equations</del></li>
-    <li><del>Radial Basis Networks</del></li>
-    <li><del>Boltzmann Machines</del></li>
-    <li><del>Deep Belief Networks</del></li>
-</ol>
-
-<h2>Programming Concepts</h2>
-
-<h3>Data Structures and Algorithms</h3>
-<p style="font-size:14px;">To be completed</p>
-
-</div>
-
-</div>
 </body>

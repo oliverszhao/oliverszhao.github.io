@@ -483,6 +483,11 @@ li#mainMenu a:hover:not(.active) {
 
 
 /* Bootstrap 4 Test Code */
+
+ol.list{
+    padding-left: 40px;
+}
+
 .bg-navbar{
     background:#1470af;
 }
@@ -518,6 +523,9 @@ ul.navbar-nav a:hover { color: rgb(26, 174, 194) !important; }
     font-family: Ubuntu;
     font-weight: bold;
     font-size: 17px; }
+#noteGroup { font-size: 32px; }
+#noteTitle { font-size: 28px; }
+#noteDoc { font-size: 18px; }
 
 @media (max-width: 1200px) {
     .identifier {color:red}
@@ -526,6 +534,9 @@ ul.navbar-nav a:hover { color: rgb(26, 174, 194) !important; }
     #missionStatement { font-size: 36px; }
     #bioDescription { font-size: 2vw; }
     #researchTitle { font-size: 1.5vw; }
+    #noteGroup { font-size: 26px; }
+    #noteTitle { font-size: 22px; }
+    #noteDoc { font-size: 14px; }
 }
 
 @media (max-width: 992px) {
@@ -535,6 +546,9 @@ ul.navbar-nav a:hover { color: rgb(26, 174, 194) !important; }
     #missionStatement { font-size: 3.5vw; }
     #bioDescription { font-size: 2.5vw; }
     #researchTitle { font-size: 1.8vw; }
+    #noteGroup { font-size: 22px; }
+    #noteTitle { font-size: 16px; }
+    #noteDoc { font-size: 12px; }
 }
 
 @media (max-width: 768px) {
@@ -545,6 +559,9 @@ ul.navbar-nav a:hover { color: rgb(26, 174, 194) !important; }
     #missionStatement { font-size: 3.25vw; }
     #bioDescription { font-size: 3vw; }
     #researchTitle { font-size: 2.5vw; }
+    #noteGroup { font-size: 30px; }
+    #noteTitle { font-size: 25px; }
+    #noteDoc { font-size: 18px; }
 }
 
 @media (max-width: 576px) {
@@ -555,4 +572,7 @@ ul.navbar-nav a:hover { color: rgb(26, 174, 194) !important; }
     #missionStatement { font-size: 4vw; }
     #bioDescription { font-size: 3.5vw; }
     #researchTitle { font-size: 4vw; }
+    #noteGroup { font-size: 24px; }
+    #noteTitle { font-size: 20px; }
+    #noteDoc { font-size: 16px; }
 }
