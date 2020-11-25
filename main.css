@@ -216,8 +216,8 @@ h1 {
     font-style: normal;
     color: white;
     text-align: left;
-    padding-left: 80px;
-    padding-right: 80px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 h2 {
@@ -226,8 +226,8 @@ h2 {
     font-style: normal;
     color: white;
     text-align: left;
-    padding-left: 80px;
-    padding-right: 80px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 h3 {
@@ -236,8 +236,8 @@ h3 {
     font-style: normal;
     color: white;
     text-align: left;
-    padding-left: 80px;
-    padding-right: 80px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 h4 {
@@ -246,8 +246,8 @@ h4 {
     font-style: normal;
     color: white;
     text-align: left;
-    padding-left: 80px;
-    padding-right: 80px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 h5 {
@@ -256,16 +256,16 @@ h5 {
     font-style: normal;
     color: white;
     text-align: left;
-    padding-left: 80px;
-    padding-right: 80px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
   
 p {
     font-family: 'Lora';
     color: white;
     text-align: left;
-    padding-left: 80px;
-    padding-right: 80px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 ol {
@@ -379,6 +379,17 @@ li#mainMenu a:hover:not(.active) {
     opacity: 0.75;
     }
 
+.fade#image {
+    opacity: 1;
+    transition: opacity .25s ease-in-out;
+    -moz-transition: opacity .25s ease-in-out;
+    -webkit-transition: opacity .25s ease-in-out;
+}
+
+.fade#image:hover {
+    opacity: 0.75;
+    }
+
 .reversefade {
     transition: opacity .25s ease-in-out;
     -moz-transition: opacity .25s ease-in-out;
@@ -469,3 +480,79 @@ li#mainMenu a:hover:not(.active) {
 
 /* Change the background color of the dropdown button when the dropdown content is shown */
 .dropdown:hover .dropbtn {background-color: rgb(26, 174, 194);}
+
+
+/* Bootstrap 4 Test Code */
+.bg-navbar{
+    background:#1470af;
+}
+
+.navbar a{
+    font-family: Ubuntu !important;
+    font-size: 20px;
+    color:white !important;
+}
+
+ul.navbar-nav a:hover { color: rgb(26, 174, 194) !important; }
+
+.text-responsive {
+    font-size: calc(100% + 2vw + 1vh);
+}
+
+.primary-color {
+    background-color: #1470af; 
+}
+   
+/* xs (<576px), sm (>=576px), md (>=768px), and lg (>=992px), xl (>=1200px) */
+
+.research-grid {max-width:1200px; }
+.identifier {color:black}
+#bioLine { font-size: 4vw; }
+#missionTitle { font-size: 50px; }
+#missionStatement { font-size: 36px; }
+#bioDescription { font-size: 1.5vw; }
+#researchTitle { 
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    font-family: Ubuntu;
+    font-weight: bold;
+    font-size: 17px; }
+
+@media (max-width: 1200px) {
+    .identifier {color:red}
+    #bioLine { font-size: 5vw; }
+    #missionTitle { font-size: 50px; }
+    #missionStatement { font-size: 36px; }
+    #bioDescription { font-size: 2vw; }
+    #researchTitle { font-size: 1.5vw; }
+}
+
+@media (max-width: 992px) {
+    .identifier {color:orange}
+    #bioLine { font-size: 6vw; }
+    #missionTitle { font-size: 5vw; }
+    #missionStatement { font-size: 3.5vw; }
+    #bioDescription { font-size: 2.5vw; }
+    #researchTitle { font-size: 1.8vw; }
+}
+
+@media (max-width: 768px) {
+    .research-grid {max-width:500px; }
+    .identifier {color:yellow}
+    #bioLine { font-size: 6vw; }
+    #missionTitle { font-size: 5vw; }
+    #missionStatement { font-size: 3.25vw; }
+    #bioDescription { font-size: 3vw; }
+    #researchTitle { font-size: 2.5vw; }
+}
+
+@media (max-width: 576px) {
+    .research-grid {max-width:400px; }
+    .identifier {color:green}
+    #bioLine { font-size: 5.5vw; }
+    #missionTitle { font-size: 8vw; }
+    #missionStatement { font-size: 4vw; }
+    #bioDescription { font-size: 3.5vw; }
+    #researchTitle { font-size: 4vw; }
+}
