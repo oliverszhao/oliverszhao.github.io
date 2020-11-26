@@ -526,6 +526,18 @@ ul.navbar-nav a:hover { color: rgb(26, 174, 194) !important; }
 #noteGroup { font-size: 32px; }
 #noteTitle { font-size: 28px; }
 #noteDoc { font-size: 18px; }
+#contactdiv { width: 550px; }
+#contactcenter { 
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -50px;
+    margin-left: -50px;
+    width: 100px;
+    height: 100px; }
+#contact1 { font-size: 36px; }
+#contact2 { font-size: 28px; }
+#contact3 { font-size: 28px; }
 
 @media (max-width: 1200px) {
     .identifier {color:red}
@@ -549,6 +561,10 @@ ul.navbar-nav a:hover { color: rgb(26, 174, 194) !important; }
     #noteGroup { font-size: 22px; }
     #noteTitle { font-size: 16px; }
     #noteDoc { font-size: 12px; }
+    #contact1 { font-size: 30px; }
+    #contact2 { font-size: 20px; }
+    #contact3 { font-size: 20px; }
+    #contactdiv { width: 450px; }
 }
 
 @media (max-width: 768px) {
@@ -562,6 +578,10 @@ ul.navbar-nav a:hover { color: rgb(26, 174, 194) !important; }
     #noteGroup { font-size: 30px; }
     #noteTitle { font-size: 25px; }
     #noteDoc { font-size: 18px; }
+    #contact1 { font-size: 26px; }
+    #contact2 { font-size: 14px; }
+    #contact3 { font-size: 14px; }
+    #contactdiv { width: 400px; }
 }
 
 @media (max-width: 576px) {
@@ -575,4 +595,8 @@ ul.navbar-nav a:hover { color: rgb(26, 174, 194) !important; }
     #noteGroup { font-size: 24px; }
     #noteTitle { font-size: 20px; }
     #noteDoc { font-size: 16px; }
+    #contact1 { font-size: 24px; }
+    #contact2 { font-size: 12px; }
+    #contact3 { font-size: 12px; }
+    #contactdiv { width: 350px; }
 }
