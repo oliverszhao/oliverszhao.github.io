@@ -1,213 +1,23 @@
-@font-face {
-    font-family: 'Lora';
-    src: url('./Fonts/Lora-Medium.eot');
-    src: url('./Fonts/Lora-Medium.eot?#iefix') format('embedded-opentype'),
-        url('./Fonts/Lora-Medium.woff2') format('woff2'),
-        url('./Fonts/Lora-Medium.woff') format('woff'),
-        url('./Fonts/Lora-Medium.ttf') format('truetype'),
-        url('./Fonts/Lora-Medium.svg#Lora-Medium') format('svg');
-    font-weight: 500;
-    font-style: normal;
-    font-display: swap;
-}
+/* Color Palettes: 
+https://coolors.co/2f6882-3b7d9c-3493bf-c5ebfc-afcddb
+#2F6882
+#3B7D9C
+#3493BF
+#C5EBFC
+#AFCDDB
 
-@font-face {
-    font-family: 'Lora';
-    src: url('./Fonts/Lora-MediumItalic.eot');
-    src: url('./Fonts/Lora-MediumItalic.eot?#iefix') format('embedded-opentype'),
-        url('./Fonts/Lora-MediumItalic.woff2') format('woff2'),
-        url('./Fonts/Lora-MediumItalic.woff') format('woff'),
-        url('./Fonts/Lora-MediumItalic.ttf') format('truetype'),
-        url('./Fonts/Lora-MediumItalic.svg#Lora-MediumItalic') format('svg');
-    font-weight: 500;
-    font-style: italic;
-    font-display: swap;
-}
+https://coolors.co/1fa0db-4fcde0-dff2f5-015982-09212b
+#DFF2F5 - Azure Web X 11 Color
+#4FCDE0 - Sky Blue Crayola
+#1FA0DB - Carolina Blue
+#015982 - Blue Sapphire 
+#09212B - Rich Black FOGRA 29
+*/
 
-@font-face {
-    font-family: 'Lora';
-    src: url('./Fonts/Lora-Regular.eot');
-    src: url('./Fonts/Lora-Regular.eot?#iefix') format('embedded-opentype'),
-        url('./Fonts/Lora-Regular.woff2') format('woff2'),
-        url('./Fonts/Lora-Regular.woff') format('woff'),
-        url('./Fonts/Lora-Regular.ttf') format('truetype'),
-        url('./Fonts/Lora-Regular.svg#Lora-Regular') format('svg');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
-}
 
-@font-face {
-    font-family: 'Lora';
-    src: url('./Fonts/Lora-SemiBold.eot');
-    src: url('./Fonts/Lora-SemiBold.eot?#iefix') format('embedded-opentype'),
-        url('./Fonts/Lora-SemiBold.woff2') format('woff2'),
-        url('./Fonts/Lora-SemiBold.woff') format('woff'),
-        url('./Fonts/Lora-SemiBold.ttf') format('truetype'),
-        url('./Fonts/Lora-SemiBold.svg#Lora-SemiBold') format('svg');
-    font-weight: 600;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Lora';
-    src: url('./Fonts/Lora-Italic.eot');
-    src: url('./Fonts/Lora-Italic.eot?#iefix') format('embedded-opentype'),
-        url('./Fonts/Lora-Italic.woff2') format('woff2'),
-        url('./Fonts/Lora-Italic.woff') format('woff'),
-        url('./Fonts/Lora-Italic.ttf') format('truetype'),
-        url('./Fonts/Lora-Italic.svg#Lora-Italic') format('svg');
-    font-weight: normal;
-    font-style: italic;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Lora';
-    src: url('./Fonts/Lora-Bold.eot');
-    src: url('./Fonts/Lora-Bold.eot?#iefix') format('embedded-opentype'),
-        url('./Fonts/Lora-Bold.woff2') format('woff2'),
-        url('./Fonts/Lora-Bold.woff') format('woff'),
-        url('./Fonts/Lora-Bold.ttf') format('truetype'),
-        url('./Fonts/Lora-Bold.svg#Lora-Bold') format('svg');
-    font-weight: bold;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Lora';
-    src: url('./Fonts/Lora-BoldItalic.eot');
-    src: url('./Fonts/Lora-BoldItalic.eot?#iefix') format('embedded-opentype'),
-        url('./Fonts/Lora-BoldItalic.woff2') format('woff2'),
-        url('./Fonts/Lora-BoldItalic.woff') format('woff'),
-        url('./Fonts/Lora-BoldItalic.ttf') format('truetype'),
-        url('./Fonts/Lora-BoldItalic.svg#Lora-BoldItalic') format('svg');
-    font-weight: bold;
-    font-style: italic;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Lora';
-    src: url('./Fonts/Lora-SemiBoldItalic.eot');
-    src: url('./Fonts/Lora-SemiBoldItalic.eot?#iefix') format('embedded-opentype'),
-        url('./Fonts/Lora-SemiBoldItalic.woff2') format('woff2'),
-        url('./Fonts/Lora-SemiBoldItalic.woff') format('woff'),
-        url('./Fonts/Lora-SemiBoldItalic.ttf') format('truetype'),
-        url('./Fonts/Lora-SemiBoldItalic.svg#Lora-SemiBoldItalic') format('svg');
-    font-weight: 600;
-    font-style: italic;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Ubuntu';
-    src: url('./Fonts/Ubuntu-Regular.eot');
-    src: url('./Fonts/Ubuntu-Regular.eot?#iefix') format('embedded-opentype'),
-        url('./Fonts/Ubuntu-Regular.woff2') format('woff2'),
-        url('./Fonts/Ubuntu-Regular.woff') format('woff'),
-        url('./Fonts/Ubuntu-Regular.ttf') format('truetype'),
-        url('./Fonts/Ubuntu-Regular.svg#Ubuntu-Regular') format('svg');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Ubuntu';
-    src: url('./Fonts/Ubuntu-MediumItalic.eot');
-    src: url('./Fonts/Ubuntu-MediumItalic.eot?#iefix') format('embedded-opentype'),
-        url('./Fonts/Ubuntu-MediumItalic.woff2') format('woff2'),
-        url('./Fonts/Ubuntu-MediumItalic.woff') format('woff'),
-        url('./Fonts/Ubuntu-MediumItalic.ttf') format('truetype'),
-        url('./Fonts/Ubuntu-MediumItalic.svg#Ubuntu-MediumItalic') format('svg');
-    font-weight: 500;
-    font-style: italic;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Ubuntu';
-    src: url('./Fonts/Ubuntu-Medium.eot');
-    src: url('./Fonts/Ubuntu-Medium.eot?#iefix') format('embedded-opentype'),
-        url('./Fonts/Ubuntu-Medium.woff2') format('woff2'),
-        url('./Fonts/Ubuntu-Medium.woff') format('woff'),
-        url('./Fonts/Ubuntu-Medium.ttf') format('truetype'),
-        url('./Fonts/Ubuntu-Medium.svg#Ubuntu-Medium') format('svg');
-    font-weight: 500;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Ubuntu';
-    src: url('./Fonts/Ubuntu-Bold.eot');
-    src: url('./Fonts/Ubuntu-Bold.eot?#iefix') format('embedded-opentype'),
-        url('./Fonts/Ubuntu-Bold.woff2') format('woff2'),
-        url('./Fonts/Ubuntu-Bold.woff') format('woff'),
-        url('./Fonts/Ubuntu-Bold.ttf') format('truetype'),
-        url('./Fonts/Ubuntu-Bold.svg#Ubuntu-Bold') format('svg');
-    font-weight: bold;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Ubuntu';
-    src: url('./Fonts/Ubuntu-BoldItalic.eot');
-    src: url('./Fonts/Ubuntu-BoldItalic.eot?#iefix') format('embedded-opentype'),
-        url('./Fonts/Ubuntu-BoldItalic.woff2') format('woff2'),
-        url('./Fonts/Ubuntu-BoldItalic.woff') format('woff'),
-        url('./Fonts/Ubuntu-BoldItalic.ttf') format('truetype'),
-        url('./Fonts/Ubuntu-BoldItalic.svg#Ubuntu-BoldItalic') format('svg');
-    font-weight: bold;
-    font-style: italic;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Ubuntu';
-    src: url('./Fonts/Ubuntu-Italic.eot');
-    src: url('./Fonts/Ubuntu-Italic.eot?#iefix') format('embedded-opentype'),
-        url('./Fonts/Ubuntu-Italic.woff2') format('woff2'),
-        url('./Fonts/Ubuntu-Italic.woff') format('woff'),
-        url('./Fonts/Ubuntu-Italic.ttf') format('truetype'),
-        url('./Fonts/Ubuntu-Italic.svg#Ubuntu-Italic') format('svg');
-    font-weight: normal;
-    font-style: italic;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Ubuntu';
-    src: url('./Fonts/Ubuntu-Light.eot');
-    src: url('./Fonts/Ubuntu-Light.eot?#iefix') format('embedded-opentype'),
-        url('./Fonts/Ubuntu-Light.woff2') format('woff2'),
-        url('./Fonts/Ubuntu-Light.woff') format('woff'),
-        url('./Fonts/Ubuntu-Light.ttf') format('truetype'),
-        url('./Fonts/Ubuntu-Light.svg#Ubuntu-Light') format('svg');
-    font-weight: 300;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Ubuntu';
-    src: url('./Fonts/Ubuntu-LightItalic.eot');
-    src: url('./Fonts/Ubuntu-LightItalic.eot?#iefix') format('embedded-opentype'),
-        url('./Fonts/Ubuntu-LightItalic.woff2') format('woff2'),
-        url('./Fonts/Ubuntu-LightItalic.woff') format('woff'),
-        url('./Fonts/Ubuntu-LightItalic.ttf') format('truetype'),
-        url('./Fonts/Ubuntu-LightItalic.svg#Ubuntu-LightItalic') format('svg');
-    font-weight: 300;
-    font-style: italic;
-    font-display: swap;
-}
-
+/* General Formatting (3797d6) */
 body {
-    background-color: #3797d6;
+    background-color: #1FA0DB;
 }
 
 h1 {
@@ -296,35 +106,7 @@ th, td {
     text-align: center;
   }
 
-/* Create columns on webpage */
-.column {
-    float: left;
-    width: 50%;
-  }
-  
-/* Clear floats after the columns */
-.row:after {
-    content: "";
-    display: table;
-    clear: both;
-   }
-
-/* Remove vertical spacing */
-.tight {
-    margin-top: 0;
-    margin-bottom: 0;
-    line-height: /* adjust to tweak weird fonts */;
-}
-
-.tightlast{
-    margin-top: 0;
-    line-height: /* adjust to tweak weird fonts */;
-}
-
-/* This section is for hyperlinking  text that 
-   is not on the navigation menu. 
-   (Don't completely understand properties yet) */
-
+/* Resources Page */
 a#link {
     background: linear-gradient(to right, midnightblue, midnightblue 50%, white 50%);
     background-clip: text;
@@ -339,46 +121,11 @@ a#link:hover {
     background-position: 0 100%;
   }
 
-/* This section is for creating menu navigation 
-   (Don't completely understand it yet tbh) */
-
-li#mainMenu {
-    float: left;
-    list-style-type: none;
-    font-size: 20px;
-}
-
-li#mainMenu a {
-    list-style-type: none;
-    display: block;
-    font-family: 'Ubuntu';
-    font-weight: 300;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-}
-
-li#mainMenu a:hover:not(.active) {
-  background-color: rgb(26, 174, 194);
-}
-
 .active {
   background-color: rgb(9, 61, 121);
 }
 
-/* Fade when mouse hovering above it */
-.fade,.reversefade {
-    opacity: 1;
-    transition: opacity .25s ease-in-out;
-    -moz-transition: opacity .25s ease-in-out;
-    -webkit-transition: opacity .25s ease-in-out;
-    }
- 
-.fade:hover {
-    opacity: 0.75;
-    }
-
+/* Fade on Hover */
 .fade#image {
     opacity: 1;
     transition: opacity .25s ease-in-out;
@@ -390,31 +137,7 @@ li#mainMenu a:hover:not(.active) {
     opacity: 0.75;
     }
 
-.reversefade {
-    transition: opacity .25s ease-in-out;
-    -moz-transition: opacity .25s ease-in-out;
-    -webkit-transition: opacity .25s ease-in-out;
-    }
-
-.reversefade:not(:hover) {
-    opacity: 0.75;
-    }
-
-
-/* CSS rule applied to HTML element with id="element1"
-#element1 {
-    text-align: center;
-    color: red;
-}
-*/
-
-/* CSS rule applied to HTML element with class="group1"
-#.group1 {
-    text-align: center;
-    color: red;
-}
-*/
-
+/* Hide on Desktop/Mobile */
 @media only screen and (orientation:landscape) and (min-width: 1080px) {
     .mobile {
         display: none;
@@ -433,47 +156,19 @@ li#mainMenu a:hover:not(.active) {
     }
 }
 
-/* Change color of dropdown links on hover */
-.dropdown-content a:hover {background-color: #ddd;}
-
-/* Show the dropdown menu on hover */
-.dropdown:hover .dropdown-content {display: block;}
-
-/* Change the background color of the dropdown button when the dropdown content is shown */
-.dropdown:hover .dropbtn {background-color: rgb(26, 174, 194);}
-
-
-/* Bootstrap 4 Test Code */
-
-ol.list{
-    padding-left: 40px;
-}
-
-.bg-navbar{
-    background:#1470af;
-}
-
+/* Navigation Bar Specifications */
 .navbar a{
     font-family: Ubuntu !important;
     font-size: 20px;
     color:white !important;
 }
 
-ul.navbar-nav a:hover { color: rgb(26, 174, 194) !important; }
+ul.navbar-nav a:hover { color: #09212B !important; }
 
-.text-responsive {
-    font-size: calc(100% + 2vw + 1vh);
-}
-
-.primary-color {
-    background-color: #3797d6; 
-}
-   
-/* xs (<576px), sm (>=576px), md (>=768px), and lg (>=992px), xl (>=1200px) */
-
+/* Responsive Font Sizes
+   xs (<576px), sm (>=576px), md (>=768px), and lg (>=992px), xl (>=1200px) */
 .nav-item{ padding-left: 10px; 
            padding-right: 10px; }
-
 .research-grid {max-width:1200px; }
 .identifier {color:black}
 #bioLine { font-size: 4vw; }
@@ -563,4 +258,3 @@ ul.navbar-nav a:hover { color: rgb(26, 174, 194) !important; }
     #contact2 { font-size: 12px; }
     #contact3 { font-size: 12px; }
     #contactdiv { width: 350px; }
-}
