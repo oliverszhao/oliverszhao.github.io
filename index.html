@@ -18,29 +18,29 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </head>
 
-<body>
+<body class="bg-5 mt-3 pt-3">
 
 <!-- Navigation bar -->
-<nav class="navbar navbar-expand-md navbar-light">
+<nav class="navbar navbar-expand-md navbar-light fixed-top bg-5" >
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarText">
       <ul class="navbar-nav mr-auto">
-        <li class="nav-item active">
-          <a class="nav-link" href="./index.html">About <span class="sr-only">(current)</span></a>
+        <li class="nav-item active-item">
+          <a class="nav-link active-link" id="navbar" href="./index.html">About <span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="./research.html">Research</a>
+          <a class="nav-link" id="navbar" href="./research.html">Research</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="./resume.html">CV</a>
+            <a class="nav-link" id="navbar" href="./resume.html">CV</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="./notes.html">Resources</a>
+            <a class="nav-link" id="navbar" href="./notes.html">Resources</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="./contact.html">Contact</a>
+            <a class="nav-link" id="navbar" href="./contact.html">Contact</a>
         </li>
       </ul>
       <span class="navbar-text desktop" style="font-size: 32px; color:white">
@@ -49,29 +49,24 @@
     </div>
 </nav>
 
-
-<div class="container-fluid d-flex justify-content-center">
-    <div class="row py-5" style="max-width:1000px">
-        <h1 class="text-center" id="bioLine">I'm an engineer who is interested <br> in driving AI into medicine.</h1>
-    </div>
-</div>
-
-<div class="container-fluid d-flex justify-content-center">
-    <div class="row pb-5" style="max-width:1000px">
-        <div class="col-sm-6">
-            <img src="./Images/Oliver.png" width="100%">
+<!-- Front Page Panel -->
+<div class="container-fluid d-flex justify-content-center mt-5">
+    <div class="row mt-5">
+        <div class="col-md-7 align-self-center">
+            <h1 class="text-center" id="bioLine">I'm an engineer interested in driving AI into medicine.</h1>
+            <h4 class="text-center" id="missionStatement" style="font-weight:50">My personal mission is to leverage machine learning to improve medicine through the use of assistive decision-making software, patient-specific predictive models, and streamlined workflow tools.</h4>
+            <div class="row">
+                <div class="col-6">
+                    <span class="float-right m-3"><a href="./resume.html" type="button" class="btn bt-outline-3">About Me</a></span>
+                </div>
+                <div class="col-6">
+                    <span class="float-left m-3"><a href="./research.html" type="button" class="btn bt-outline-3">My Projects</a></span>
+                </div>
+            </div>
         </div>
-        <div class="col-sm-6">
-            <h2 class="text-center" id="missionTitle">My Mission</h2>
-            <h4 class="text-center" id="missionStatement" style="font-weight:50">To leverage machine learning to improve medicine through the use of assistive decision-making software, patient-specific predictive models, and streamlined workflow tools.</h4>
+        <div class="col-md-5 align-self-center">
+            <img src="./Images/OliverBackground.png" width="100%">
         </div>
-    </div>
-</div>
-
-<div class="container-fluid d-flex justify-content-center">
-    <div class="row" style="max-width:1000px">
-        <p class="text-center" id="bioDescription">I am interested in bringing new technologies to medicine. Over time, my research areas have moved from basic biological research into applied computational areas. I began with genetic engineering and stem cell & neural engineering before moving into machine learning and mechanistic modeling.</p>
-        <p class="text-center" id="bioDescription">My previous projects focused on developing ensemble methods for nanomaterial optimization, implementing image recognition techniques for medical annotation, and building multimodal neural networks for predicting patient outcomes. At the NIH, I am using 3D electron microscopy to study the structure of thrombi to better understand the blood clotting process, as well as examining platelets from COVID-19 hospitalized patients to understand the cause for abnormal clotting. </p>
     </div>
 </div>
 

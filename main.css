@@ -1,17 +1,22 @@
 /* Color Palettes: 
-https://coolors.co/2f6882-3b7d9c-3493bf-c5ebfc-afcddb
-#2F6882
-#3B7D9C
-#3493BF
-#C5EBFC
-#AFCDDB
-
 https://coolors.co/1fa0db-4fcde0-dff2f5-015982-09212b
 #DFF2F5 - Azure Web X 11 Color
 #4FCDE0 - Sky Blue Crayola
 #1FA0DB - Carolina Blue
 #015982 - Blue Sapphire 
 #09212B - Rich Black FOGRA 29
+*/
+
+/* Project Palettes:
+https://coolors.co/a4303f-870058-d4df93-6b654b-f9b5ac-82a6b1-ff923f-004643
+#A4303F - Vivid Burgundy
+#870058 - Pansy Purple
+#D4DF9E - Yellow Green Crayola
+#6B654B - Gold Fusion
+#F9B5AC - Melon
+#82A6B1 - Pewter Blue
+#FF934F - Atomic Tangerine
+#004643 - Warm Black
 */
 
 
@@ -83,7 +88,7 @@ ol {
     font-weight: 300;
     color: white;
     font-size: 14px;
-    padding-left: 95px;
+    padding-left: 45px;
     padding-right: 80px;
     max-width: 750px;
 }
@@ -108,7 +113,7 @@ th, td {
 
 /* Resources Page */
 a#link {
-    background: linear-gradient(to right, midnightblue, midnightblue 50%, white 50%);
+    background: linear-gradient(to right, #1FA0DB, #1FA0DB 50%, white 50%);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -120,10 +125,6 @@ a#link {
 a#link:hover {
     background-position: 0 100%;
   }
-
-.active {
-  background-color: rgb(9, 61, 121);
-}
 
 /* Fade on Hover */
 .fade#image {
@@ -163,10 +164,54 @@ a#link:hover {
     color:white !important;
 }
 
-ul.navbar-nav a:hover { color: #09212B !important; }
+a#navbar:not(.active-link):hover { 
+    border-bottom: 3px solid#4FCDE0 !important; 
+    transition: 0.25s ;}
+
+.active-item {
+    border-bottom: 3px solid white;
+  }
+
+/* Background Colors */
+.bg-1 { background-color: #DFF2F5; }
+.bg-2 { background-color: #4FCDE0; }
+.bg-3 { background-color: #1FA0DB; }
+.bg-4 { background-color: #015982; }
+.bg-5 { background-color: #09212B; }
+.bg-black { background-color: black; }
+  
+/* Gallery Fade Effects */
+.galleryImagedark {
+    opacity: 1;
+    transition: 0.5s;
+  }
+.galleryImagedark:hover { opacity: 0.75; }
+
+.galleryImagelight {
+    opacity: 1;
+    transition: 0.5s;
+  }
+
+.galleryImagelight:hover { opacity: 0; }
+
+.carousel-caption {
+    top: auto;
+    bottom: -10px;
+}
+
+/* Button Classes */
+.bt-outline-3 {
+    color:#1FA0DB; 
+    border-color:#1FA0DB;}
+
+.bt-outline-3:hover {
+    color:#1FA0DB; 
+    border-color:#1FA0DB;
+    background-color:#DFF2F5;}
 
 /* Responsive Font Sizes
    xs (<576px), sm (>=576px), md (>=768px), and lg (>=992px), xl (>=1200px) */
+
 .nav-item{ padding-left: 10px; 
            padding-right: 10px; }
 .research-grid {max-width:1200px; }
@@ -181,7 +226,7 @@ ul.navbar-nav a:hover { color: #09212B !important; }
     text-align: center;
     font-family: Ubuntu;
     font-weight: bold;
-    font-size: 17px; }
+    font-size: 15px; }
 #noteGroup { font-size: 32px; }
 #noteTitle { font-size: 28px; }
 #noteDoc { font-size: 18px; }
@@ -199,24 +244,28 @@ ul.navbar-nav a:hover { color: #09212B !important; }
 #contact3 { font-size: 28px; }
 
 @media (max-width: 1200px) {
-    .identifier {color:red}
-    #bioLine { font-size: 5vw; }
+    .on-md { display: show !important; }
+    .off-md { display: none !important; }
+    .identifier { color:red}
+    #bioLine { font-size: 4vw; }
     #missionTitle { font-size: 50px; }
-    #missionStatement { font-size: 36px; }
+    #missionStatement { font-size: 30px; }
     #bioDescription { font-size: 2vw; }
-    #researchTitle { font-size: 1.5vw; }
+    #researchTitle { font-size: 1.1vw; }
     #noteGroup { font-size: 26px; }
     #noteTitle { font-size: 22px; }
     #noteDoc { font-size: 14px; }
 }
 
 @media (max-width: 992px) {
-    .identifier {color:orange}
-    #bioLine { font-size: 6vw; }
+    .on-md { display: show !important; }
+    .off-md { display: none !important; }
+    .identifier { color:orange}
+    #bioLine { font-size: 3.5vw; }
     #missionTitle { font-size: 5vw; }
-    #missionStatement { font-size: 3.5vw; }
+    #missionStatement { font-size: 22px; }
     #bioDescription { font-size: 2.5vw; }
-    #researchTitle { font-size: 1.8vw; }
+    #researchTitle { font-size: 1.6vw; }
     #noteGroup { font-size: 22px; }
     #noteTitle { font-size: 16px; }
     #noteDoc { font-size: 12px; }
@@ -227,13 +276,23 @@ ul.navbar-nav a:hover { color: #09212B !important; }
 }
 
 @media (max-width: 768px) {
-    .research-grid {max-width:500px; }
-    .identifier {color:yellow}
+    a#navbar:not(.active-link):hover { 
+        border-bottom: none !important; 
+        color: #4FCDE0 !important; 
+        transition: 0.25s ;}
+    .active-item {
+        border-bottom: none;
+        }
+
+    .on-md { display: none !important; }
+    .off-md { display: show !important; }
+    .research-grid { max-width:500px; }
+    .identifier { color:yellow}
     #bioLine { font-size: 6vw; }
     #missionTitle { font-size: 5vw; }
     #missionStatement { font-size: 3.25vw; }
     #bioDescription { font-size: 3vw; }
-    #researchTitle { font-size: 2.5vw; }
+    #researchTitle { font-size: 12px; }
     #noteGroup { font-size: 30px; }
     #noteTitle { font-size: 25px; }
     #noteDoc { font-size: 18px; }
@@ -244,13 +303,15 @@ ul.navbar-nav a:hover { color: #09212B !important; }
 }
 
 @media (max-width: 576px) {
-    .research-grid {max-width:400px; }
-    .identifier {color:green}
+    .on-md { display: none !important; }
+    .off-md { display: show !important; }
+    .research-grid { max-width:400px; }
+    .identifier { color:green}
     #bioLine { font-size: 5.5vw; }
     #missionTitle { font-size: 8vw; }
     #missionStatement { font-size: 4vw; }
     #bioDescription { font-size: 3.5vw; }
-    #researchTitle { font-size: 4vw; }
+    #researchTitle { font-size: 20px; }
     #noteGroup { font-size: 24px; }
     #noteTitle { font-size: 20px; }
     #noteDoc { font-size: 16px; }
@@ -258,3 +319,4 @@ ul.navbar-nav a:hover { color: #09212B !important; }
     #contact2 { font-size: 12px; }
     #contact3 { font-size: 12px; }
     #contactdiv { width: 350px; }
+}
