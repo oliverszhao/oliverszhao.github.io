@@ -74,7 +74,7 @@ h5 {
     padding-left: 10px;
     padding-right: 10px;
 }
-  
+
 p {
     font-family: 'Lora';
     color: white;
@@ -165,7 +165,7 @@ a#link:hover {
 }
 
 a#navbar:not(.active-link):hover { 
-    border-bottom: 3px solid#4FCDE0 !important; 
+    border-bottom: 3px solid#DFF2F5 !important; 
     transition: 0.25s ;}
 
 .active-item {
@@ -208,6 +208,7 @@ a#navbar:not(.active-link):hover {
     color:#1FA0DB; 
     border-color:#1FA0DB;
     background-color:#DFF2F5;}
+ 
 
 /* Responsive Font Sizes
    xs (<576px), sm (>=576px), md (>=768px), and lg (>=992px), xl (>=1200px) */
@@ -242,6 +243,13 @@ a#navbar:not(.active-link):hover {
 #contact1 { font-size: 36px; }
 #contact2 { font-size: 28px; }
 #contact3 { font-size: 28px; }
+#hobbyTitle { font-size: 40px; 
+              color: #015982; }
+#hobbyDescription { font-size: 20px; 
+                    color: #015982; }
+#hobbyPanels { max-width: 800px; }
+#hobbyMore {color: #015982;
+            font-size: 28px; }
 
 @media (max-width: 1200px) {
     .on-md { display: show !important; }
@@ -273,6 +281,10 @@ a#navbar:not(.active-link):hover {
     #contact2 { font-size: 20px; }
     #contact3 { font-size: 20px; }
     #contactdiv { width: 450px; }
+    #hobbyTitle { font-size: 30px; }
+    #hobbyDescription { font-size: 18px; }
+    #hobbyMore {font-size: 24px; }
+    #hobbyPanels { max-width: 700px; }
 }
 
 @media (max-width: 768px) {
@@ -283,7 +295,6 @@ a#navbar:not(.active-link):hover {
     .active-item {
         border-bottom: none;
         }
-
     .on-md { display: none !important; }
     .off-md { display: show !important; }
     .research-grid { max-width:500px; }
@@ -300,6 +311,10 @@ a#navbar:not(.active-link):hover {
     #contact2 { font-size: 14px; }
     #contact3 { font-size: 14px; }
     #contactdiv { width: 400px; }
+    #hobbyTitle { font-size: 24px; }
+    #hobbyDescription { font-size: 16px; }
+    #hobbyMore {font-size: 20px; }
+    #hobbyPanels { max-width: 500px; }
 }
 
 @media (max-width: 576px) {
@@ -319,4 +334,15 @@ a#navbar:not(.active-link):hover {
     #contact2 { font-size: 12px; }
     #contact3 { font-size: 12px; }
     #contactdiv { width: 350px; }
+    #hobbyDescription { font-size: 14px; }
+    #hobbyMore {font-size: 18px; }
+    #hobbyPanels { max-width: 90%; }
+}
+
+
+/* Hobbies Panels/Pages */
+.hobbyPanel {
+    background-image: url("./Images/PanelBackground.png");
+    background-repeat: no-repeat;
+    background-size: auto;
 }
