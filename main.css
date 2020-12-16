@@ -311,9 +311,9 @@ a#navbar:not(.active-link):hover {
     #contact2 { font-size: 14px; }
     #contact3 { font-size: 14px; }
     #contactdiv { width: 400px; }
-    #hobbyTitle { font-size: 24px; }
-    #hobbyDescription { font-size: 16px; }
-    #hobbyMore {font-size: 20px; }
+    #hobbyTitle { font-size: 22px; }
+    #hobbyDescription { font-size: 14px; }
+    #hobbyMore {font-size: 16px; }
     #hobbyPanels { max-width: 500px; }
 }
 
@@ -334,8 +334,9 @@ a#navbar:not(.active-link):hover {
     #contact2 { font-size: 12px; }
     #contact3 { font-size: 12px; }
     #contactdiv { width: 350px; }
-    #hobbyDescription { font-size: 14px; }
-    #hobbyMore {font-size: 18px; }
+    #hobbyTitle { font-size: 18px; }
+    #hobbyDescription { font-size: 12px; }
+    #hobbyMore {font-size: 14px; }
     #hobbyPanels { max-width: 90%; }
 }
 
