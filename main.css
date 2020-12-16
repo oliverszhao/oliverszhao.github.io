@@ -250,6 +250,10 @@ a#navbar:not(.active-link):hover {
 #hobbyPanels { max-width: 800px; }
 #hobbyMore {color: #015982;
             font-size: 28px; }
+#tutoringTitle { color: #DFF2F5;
+                 font-size: 30px; }
+#tutoringSubject { color: #015982;
+                   font-size: 30px; }
 
 @media (max-width: 1200px) {
     .on-md { display: show !important; }
@@ -263,6 +267,8 @@ a#navbar:not(.active-link):hover {
     #noteGroup { font-size: 26px; }
     #noteTitle { font-size: 22px; }
     #noteDoc { font-size: 14px; }
+    #tutoringTitle { font-size: 24px; }
+    #tutoringSubject { font-size: 24px; }
 }
 
 @media (max-width: 992px) {
@@ -285,6 +291,8 @@ a#navbar:not(.active-link):hover {
     #hobbyDescription { font-size: 18px; }
     #hobbyMore {font-size: 24px; }
     #hobbyPanels { max-width: 700px; }
+    #tutoringTitle { font-size: 20px; }
+    #tutoringSubject { font-size: 20px; }
 }
 
 @media (max-width: 768px) {
@@ -353,4 +361,12 @@ a#navbar:not(.active-link):hover {
     background-image: url("./Images/PanelBackground.png");
     background-repeat: no-repeat;
     background-size: auto;
+}
+
+.btn-hobby {
+    background-color: transparent !important;
+    border-color: transparent !important;
+    box-shadow: none !important;
+    padding: 0;
+    margin: 0;
 }
