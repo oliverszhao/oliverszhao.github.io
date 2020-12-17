@@ -77,7 +77,7 @@
     </div>
     
     <div class="col-7 bg-1">
-      <h1 class="mx-md-3 mx-1 my-md-4 my-2" id="hobbyTitle">Animation</h1>
+      <h1 class="mx-md-3 mx-1 my-md-4 my-2" id="hobbyTitle">CGI Animation</h1>
       <h3 class="mx-md-3 mx-1 my-md-4 my-2" id="hobbyDescription">I am learning 3D modeling, shading, texturing, and lighting. The next steps are rigging and animation.</h3>
       <button type="button" class="btn btn-hobby" data-toggle="modal" data-target=".animationModal"><h2 class="mx-md-3 mx-1 my-md-4 my-2" id="hobbyMore">More &#8594;</h2></button>
     </div>
@@ -120,6 +120,12 @@
 <div class="modal fade webModal" tabindex="-1" role="dialog">
   <div class="modal-dialog modal-xl">
     <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title" style="color:#015982; font-size:24px"></h1>
+        <button type="button" class="close" data-dismiss="modal">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
       
       <div class="row m-5">
 
@@ -136,6 +142,12 @@
 <div class="modal fade animationModal" tabindex="-1" role="dialog">
   <div class="modal-dialog modal-xl">
     <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title" id="modalLabel">CGI Animation Gallery</h1>
+        <button type="button" class="close" data-dismiss="modal">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
       
       <div class="row m-5">
 
@@ -157,10 +169,58 @@
 <div class="modal fade digitalModal" tabindex="-1" role="dialog">
   <div class="modal-dialog modal-xl">
     <div class="modal-content">
-      
-      <div class="row m-5">
 
-        <h2 class="text-center" style="color: #015982"> Under Construction </h2>
+      <div class="modal-header">
+        <h1 class="modal-title" id="modalLabel">Digital Media Gallery</h1>
+        <button type="button" class="close" data-dismiss="modal">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      
+      <!-- Adobe InDesign Gallery -->
+      <div class="row mt-5 mx-5">
+        <h1 id="modalSubLabel">Adobe InDesign</h1>
+      </div>
+
+      <div class="row m-5">
+        <img src="./Images/TEWHPoster.png" width=100%>
+      </div>
+
+      <!-- Adobe Photoshop and Lightroom Gallery -->
+      <div class="row mt-5 mx-5">
+        <h1 id="modalSubLabel">Adobe Photoshop & Lightroom</h1>
+      </div>
+
+      <div class="row m-5">  
+        <div class="col-md-6 col-lg-4">
+          <img src="./Images/PhotoGallery01.jpg" width=100% class="my-3">
+          <img src="./Images/PhotoGallery02.jpg" width=100% class="my-3">
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <img src="./Images/PhotoGallery03.jpg" width=100% class="my-3">
+          <img src="./Images/PhotoGallery04.jpg" width=100% class="my-3">
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <img src="./Images/PhotoGallery05.jpg" width=100% class="my-3">
+          <img src="./Images/PhotoGallery06.jpg" width=100% class="my-3">
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <img src="./Images/PhotoGallery07.jpg" width=100% class="my-3">
+          <img src="./Images/PhotoGallery08.jpg" width=100% class="my-3">
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <img src="./Images/PhotoGallery09.jpg" width=100% class="my-3">
+          <img src="./Images/PhotoGallery10.jpg" width=100% class="my-3">
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <img src="./Images/PhotoGallery11.jpg" width=100% class="my-3">
+          <img src="./Images/PhotoGallery12.jpg" width=100% class="my-3">
+        </div>
 
       </div>
 
@@ -172,6 +232,13 @@
 <div class="modal fade tutoringModal" tabindex="-1" role="dialog">
   <div class="modal-dialog modal-xl">
     <div class="modal-content">
+
+      <div class="modal-header">
+        <h1 class="modal-title" id="modalLabel">Tutoring Rates & Subjects</h1>
+        <button type="button" class="close" data-dismiss="modal">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
       
       <div class="row m-5">
 
@@ -179,7 +246,7 @@
           <h2 class="text-center" id="tutoringTitle">High School Courses ($35/hr)</h2>
         </div>
         
-        <div class="col-md-8 bg-1">
+        <div class="col-md-8 bg-1 py-3">
           <h2 id="tutoringSubject">AP Physics 1/2</h2>
           <h2 id="tutoringSubject">AP Physics C</h2>
           <h2 id="tutoringSubject">AP Calculus AB/BC</h2>
@@ -196,7 +263,7 @@
           <h2 class="text-center" id="tutoringTitle">College Courses ($50/hr)</h2>
         </div>
         
-        <div class="col-md-8 bg-1">
+        <div class="col-md-8 bg-1 py-3">
           <h2 id="tutoringSubject">Introductory Biology</h2>
           <h2 id="tutoringSubject">General Chemistry</h2>
           <h2 id="tutoringSubject">Biochemistry</h2>
@@ -217,7 +284,7 @@
           <h2 class="text-center" id="tutoringTitle">MCAT Tutoring ($75/hr)</h2>
         </div>
         
-        <div class="col-md-8 bg-1">
+        <div class="col-md-8 bg-1 py-3">
           <h2 id="tutoringSubject">Biology</h2>
           <h2 id="tutoringSubject">Physics</h2>
           <h2 id="tutoringSubject">General Chemistry</h2>

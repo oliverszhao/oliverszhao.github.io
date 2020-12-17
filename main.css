@@ -254,6 +254,10 @@ a#navbar:not(.active-link):hover {
                  font-size: 30px; }
 #tutoringSubject { color: #015982;
                    font-size: 30px; }
+#modalLabel { font-size: 32px; 
+              color: #015982; }
+#modalSubLabel { font-size: 28px; 
+                 color: #015982; }
 
 @media (max-width: 1200px) {
     .on-md { display: show !important; }
@@ -269,6 +273,8 @@ a#navbar:not(.active-link):hover {
     #noteDoc { font-size: 14px; }
     #tutoringTitle { font-size: 24px; }
     #tutoringSubject { font-size: 24px; }
+    #modalLabel { font-size: 28px; }
+    #modalSubLabel { font-size: 24px; }
 }
 
 @media (max-width: 992px) {
@@ -323,6 +329,8 @@ a#navbar:not(.active-link):hover {
     #hobbyDescription { font-size: 14px; }
     #hobbyMore {font-size: 16px; }
     #hobbyPanels { max-width: 500px; }
+    #modalLabel { font-size: 20px }
+    #modalSubLabel { font-size: 18px; }
 }
 
 @media (max-width: 576px) {
@@ -370,3 +378,4 @@ a#navbar:not(.active-link):hover {
     padding: 0;
     margin: 0;
 }
+
